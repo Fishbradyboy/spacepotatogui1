@@ -1,6 +1,6 @@
-
+------ * Eclipse priv_9 Menu * ------
 --[[
-    # Rewriten by: SpacePotato
+    # Rewriten by: eclipse_wtf
 ]]
 
 repeat
@@ -8,8 +8,8 @@ repeat
  until game:IsLoaded()
  
  -- Menu/UI Creation
- if not isfile("spacepotato") then
-    makefolder("spacepotato")
+ if not isfile("eclipse.wtf") then
+    makefolder("eclipse.wtf")
  end
  
  local menu = game:GetObjects("rbxassetid://17171194056")[1] 
@@ -128,7 +128,7 @@ repeat
  Element.Size = UDim2.new(0, 140, 0, 1)
  
  Tab.Name = "Tab"
- Tab.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+ Tab.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
  Tab.BackgroundTransparency = 0
  Tab.BorderSizePixel = 1
  Tab.BorderMode = "Inset"
@@ -290,14 +290,14 @@ repeat
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = 'spacepotato.<font color="rgb(123, 28, 255)">potato</font> - uid: <font color="rgb(28, 206, 255)">' .. uid .. '</font> / fps: <font color="rgb(115, 100, 215)">' .. fpsValue .. '</font> / ping: <font color="rgb(115, 100, 215)">' .. ping .. '</font> / time: <font color="rgb(115, 100, 215)">' .. time .. '</font>'
+         WaterMarkLabel.Text = 'eclipse.<font color="rgb(115, 100, 215)">wtf</font> - uid: <font color="rgb(115, 100, 215)">' .. uid .. '</font> / fps: <font color="rgb(115, 100, 215)">' .. fpsValue .. '</font> / ping: <font color="rgb(115, 100, 215)">' .. ping .. '</font> / time: <font color="rgb(115, 100, 215)">' .. time .. '</font>'
        end
     end)
     return Watermark
  end
  
  local library = {
-    Title = 'space.<font color="rgb(115, 100, 215)">potato</font> || fallen',
+    Title = 'eclipse.<font color="rgb(115, 100, 215)">wtf</font> || fallen',
     keybind = Enum.KeyCode.RightBracket,
     Watermark = createWatermark(),
        Colors = {
